@@ -1,4 +1,3 @@
-%%bash
 #!/usr/bin/env bash
 clear
 
@@ -21,7 +20,7 @@ clear
 #	Fuente a utilizar
 	GRD=@earth_relief_$RES
 
-	gmt set GMT_VERBOSE debug
+	gmt set GMT_VERBOSE #debug
 
 #	Dibujar mapa
 #	-----------------------------------------------------------------------------------------------------------
