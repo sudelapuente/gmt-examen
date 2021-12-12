@@ -101,7 +101,7 @@ clear
 	H 10 Times-Roman Referencias
 	N 2   
 	S 0.25c -     0.5c -     1.5p,dodgerblue2       0.75c R\355os permanentes
-	S 0.25c c 0.25c yellow   0.40p     0.5c localidades
+	S 0.25c c 0.25c yellow   0.40p     0.75c Localidades
 	G 0.075c
 	G 0.075c
 	S 0.25c - 0.5c - 1.5p,black 0.75c L\355mite internacional
