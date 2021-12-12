@@ -2,16 +2,12 @@
 #!/usr/bin/env bash
 clear
 
-#	Temas a ver
-#   1. Hacer mapas a partir de DEM. 
-#	2. Agregar efecto de sombreado (-I)
-#	3. Dibujar y personalizar barra de color.
 
 #	Definir variables del mapa
 #	-----------------------------------------------------------------------------------------------------------
 #	Titulo del mapa
-	title=07_Topografico_01
-#   title=07_Topografico_Examen
+#	title=07_Topografico_01
+    title=07_Topografico_Examen
 	echo $title
 
 #	Region: Argentina
@@ -43,15 +39,11 @@ clear
 #	gmt grdimage $GRD
 
 #	Idem y agrega efecto de sombreado. a= azimut. nt1=metodo de ilumninacion
-#	gmt grdimage $GRD -I
-#	gmt grdimage $GRD -I+a45
 	gmt grdimage $GRD -I+a45+nt1ls
 
 # ------------------------------------------------------------------------------
 # Dibujar Bordes Administrativos. N1: paises. N2: Provincias, Estados, etc. N3: limites marítimos (Nborder[/pen])
-#	gmt coast -Df -N1/0.75
-#	gmt coast -Df -N2/0.25,-.
-  gmt coast -Df -N1/1.25
+    gmt coast -Df -N1/1.25
 	gmt coast -Df -N2/0.75,-.
 
 # ------------------------------------------------------------------------------
@@ -83,38 +75,17 @@ clear
 # ------------------------------------------------------------------------------  
 
 #	Agregar escala de colores a partir de CPT (-C). Posición (x,y) +wlargo/ancho. Anotaciones (-Ba). Leyenda (+l). 
-#	gmt colorbar -DJBC
-#	gmt colorbar -DJRM
-#	gmt colorbar -DJRM   -I
-#   gmt colorbar -DJRM+o0.3c/0+w11/0.618c -I
-#	gmt colorbar -DJRM+o0.3c/0+w11/0.618c -I -Ba2000f500
-#	gmt colorbar -DJRM+o0.3c/0+w11/0.618c -I -Ba2000f500 -Bx+l"Elevaciones (m)"
-#	gmt colorbar -DJRM+o0.3c/0+w11/0.618c -I -Ba2000f500 -By+l"m"
-# 	gmt colorbar -DJRM+o0.3c/0+w11/0.618c -I -Baf -By+l"km" -W0.001
 	gmt colorbar -DjRM -I -Baf -By+l"km" -W0.001 -F+gwhite+p+i+s
 #	gmt colorbar -DjRM -I -Baf -By+l"km" -W0.001 -F+gwhite+p+i+s -GNaN/0
 	
 
 # ------------------------------------------------------------------------------
 #	Dibujar Norte (-Td). Ubicacion definida por coordenads geograficas (g) centrado en Lon0/Lat0, ancho (+w). Opcionalmente se pueden definir el nivel (+f), puntos cardinales (+l)
-#	gmt basemap -Tdg-58/-51.25+w1.25c+f3+lO,E,S,N --FONT_TITLE=8p,4,Black
-#	gmt basemap -Tdg-58/-51.25+w1.25c+f2	      --FONT_TITLE=8p,4,Black
-#	gmt basemap -Tdg-58/-51.25+w1.25c+f1+l        --FONT_TITLE=8p,4,Black
-#	gmt basemap -Tdg-58/-51.25+w1.25c	          --FONT_TITLE=8p,4,Black
   gmt basemap -Tdg-66.2/-35.5+w2c	          --FONT_TITLE=8p,4,Black
 
 # ------------------------------------------------------------------------------
 #	Dibujar Escala en el mapa centrado en -Lg Lon0/Lat0, calculado en el meridiano (+c) y de ancho (+w). Opcionalmente se puede elegir un estilo elegante(+f), agregar las unidades arriba de escala (+l) o con los valores (+u).
-#	-Fl: Agrega fondo a la escala. +gfill: color fondo. +p(pen): borde principal. +i(pen): borde interno. +r(radio): borde redondeado. +s: sombra
-#	gmt basemap -Lg-58/-52:20+c-51:45+w50k+f+l
-#	gmt basemap -Lg-58/-52:20+c-51:45+w50k+f+u
-#	gmt basemap -Lg-58/-52:20+c-51:45+w50k+f 
-#	gmt basemap -Lg-58/-52:20+c-51:45+w50k   
-#	gmt basemap -Lg-58/-52:20+c-51:45+w50k+f   -Fl+gwhite
-#	gmt basemap -Lg-58/-52:20+c-51:45+w50k+f   -Fl+gwhite+p       
-#	gmt basemap -Lg-58/-52:20+c-51:45+w50k+f   -Fl+gwhite+p+i     
-#	gmt basemap -Lg-58/-52:20+c-51:45+w50k+f   -Fl+gwhite+p+i+r   
-#	gmt basemap -Lg-58/-52:20+c-51:45+w50k+f   -Fl+gwhite+p+i+r+s   
+#	-Fl: Agrega fondo a la escala. +gfill: color fondo. +p(pen): borde principal. +i(pen): borde interno. +r(radio): borde redondeado. +s: sombra   
   gmt basemap -Lg-66/-39:40+c-51:45+w50k+f+l
    
 
@@ -162,10 +133,6 @@ clear
 #	Dibujar mapa de ubicacion
 #	w: tamaño. M: Margen. D: ubicacion
 	gmt inset begin -DjTL+w3.0c+o-0.3c
-#	gmt inset begin -DjTL+w3.0c+o-0.3c -F+gwhite
-#	gmt inset begin -DjTL+w3.0c+o-0.3c -F+gwhite -M1p
-#	gmt inset begin -DjTL+w2.0c+o-0.3c
-#	gmt inset begin -DjTR+w3.0c+o-0.3c
 		gmt coast -Rg -JG$Lon/$Lat/? -Gwhite -Slightblue3 -C- -Bg
 		gmt coast -W1/faint -N1
 		gmt plot tmp_area -Wthin,darkred
@@ -178,11 +145,3 @@ clear
 gmt end
 
 rm gmt.conf
-#	Ejercicios Sugeridos
-#	1. Modificar region del mapa y la resolucion del mapa
-#	2. Modificar azimuth de la fuente de iluminuacion (az en linea 43)
-#	3. Probar las distintas opciones para la escala de color (lineas 45 a 55).
-
-# camento 12 y agrego 13 para cambiar titulo
-# comento 17 a 19 para cambiar region y agrego 20
-# comento 26 para cambiar resolucion y agrego 27
