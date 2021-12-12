@@ -73,11 +73,11 @@ clear
 
 # ------------------------------------------------------------------------------
 #	Cursos y Cuerpos de Agua
-	gmt plot "IGN/lineas_de_aguas_continentales_perenne/lineas_de_aguas_continentales_perenne.shp" -Wfaint,blue  # Descargar archivo desde el IGN	
+	gmt plot "IGN/lineas_de_aguas_continentales_perenne/lineas_de_aguas_continentales_perenne.shp" -Wfaint,dodgerblue2  # Descargar archivo desde el IGN	
 
 # ------------------------------------------------------------------------------
 #	Asentamientos
-	gmt plot "IGN/puntos_de_asentamientos/puntos_de_asentamientos_y_edificios_localidad.shp" -Sc0.2 -Gyellow  # Descargar archivo desde el IGN	
+	gmt plot "IGN/puntos_de_asentamientos/puntos_de_asentamientos_y_edificios_localidad.shp" -Sc0.1 -Gyellow  # Descargar archivo desde el IGN	
 
 
 # ------------------------------------------------------------------------------  
