@@ -136,19 +136,10 @@ clear
 	N 2   
 	S 0.25c -     0.5c -     1.5p,dodgerblue2       0.75c R\355os permanentes
 	S 0.25c c 0.25c yellow   0.40p     0.5c localidades
-#	S 0.25c - 0.5c -     1p,dodgerblue2       0.75c Additional rivers
 	G 0.075c
-#	S 0.25c c 0.25c red   0.40p     0.5c Sismos someros (0-100 km)
-#	S 0.25c kmeca 0.25c red   0.40p     0.5c Sismos someros (0-100 km)
-#	S 0.25c c 0.25c green 0.40p     0.5c Sismos intermedios (100-300 km)
-#	S 0.25c c 0.25c blue  0.40p     0.5c Sismos profundos (300-700 km)
 	G 0.075c
 	S 0.25c - 0.5c - 1.5p,black 0.75c L\355mite internacional
 	S 0.25c - 0.5c - 0.5p,black,-. 0.75c L\355mite provincial
-#	N1
-#	S 0.25c c 0.25c yellow   0.40p     0.5c localidades
-#	S 0.25c - 0.5c - 1.0p,violet     0.75c Zonas de Fracturas
-#	S 0.25c - 0.5c - 0.80p,orange    0.75c Dorsales Extintas
 	G 0.075c
 	M -72 -55 50+u f
 	END
