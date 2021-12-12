@@ -77,7 +77,7 @@ clear
 
 # ------------------------------------------------------------------------------
 #	Asentamientos
-	gmt plot "IGN/puntos_de_asentamientos_y_edificios_localidad.shp" -Sd0.2 -Gyellow  # Descargar archivo desde el IGN	
+	gmt plot "IGN/puntos_de_asentamientos/puntos_de_asentamientos_y_edificios_localidad.shp" -Sd0.2 -Gyellow  # Descargar archivo desde el IGN	
 
 
 # ------------------------------------------------------------------------------  
