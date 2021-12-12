@@ -179,8 +179,7 @@ clear
 
 # ------------------------------------------------------------------------------  
 #	Cerrar el archivo
-gmt end \
- & pid=$!
+gmt end
 
 rm gmt.conf
 #	Ejercicios Sugeridos
@@ -191,7 +190,3 @@ rm gmt.conf
 # camento 12 y agrego 13 para cambiar titulo
 # comento 17 a 19 para cambiar region y agrego 20
 # comento 26 para cambiar resolucion y agrego 27
-
-wait $pid
-
-cp -r ./$title.png '/content/gdrive/My Drive/colab_drive'
