@@ -133,15 +133,9 @@ clear
 #	Leyenda. H: Encabezado. D: Linea horizontal. N: # columnas verticales. V: Linea Vertical. S: Símbolo. M: Escala
 	cat > tmp_leyenda <<- END
 	H 10 Times-Roman Referencias
-#	N 4
-#  S 0.25c -     0.5c -     3.0p,blue       0.75c Permanent major rivers
-#  S 0.25c -     0.5c -     2.0p,blue       0.75c Additional major rivers
-#  S 0.25c -     0.5c -     1.0p,blue       0.75c Additional rivers
-#  S 0.25c -     0.5c -     1.0p,blue       0.75c Minor rivers
-#	G 0.075c
 	N 2   
 	S 0.25c -     0.5c -     1.5p,dodgerblue2       0.75c R\355os principales
-	S 0.25c -     0.5c -     0.5p,dodgerblue2       0.75c R\355os menores
+	S 0.25c c 0.25c yellow   0.40p     0.5c localidades
 #	S 0.25c - 0.5c -     1p,dodgerblue2       0.75c Additional rivers
 	G 0.075c
 #	S 0.25c c 0.25c red   0.40p     0.5c Sismos someros (0-100 km)
@@ -151,8 +145,8 @@ clear
 	G 0.075c
 	S 0.25c - 0.5c - 1.5p,black 0.75c L\355mite internacional
 	S 0.25c - 0.5c - 0.5p,black,-. 0.75c L\355mite provincial
-	N1
-	S 0.25c c 0.25c yellow   0.40p     0.5c localidades
+#	N1
+#	S 0.25c c 0.25c yellow   0.40p     0.5c localidades
 #	S 0.25c - 0.5c - 1.0p,violet     0.75c Zonas de Fracturas
 #	S 0.25c - 0.5c - 0.80p,orange    0.75c Dorsales Extintas
 	G 0.075c
