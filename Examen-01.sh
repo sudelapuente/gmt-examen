@@ -6,14 +6,10 @@ clear
 #	Definir variables del mapa
 #	-----------------------------------------------------------------------------------------------------------
 #	Titulo del mapa
-#	title=07_Topografico_01
     title=07_Topografico_Examen
 	echo $title
 
 #	Region: Argentina
-#	REGION=-72/-64/-35/-30
-#	REGION=AR,BR,CO
-#	REGION=AR,CL,GS
     REGION=-72/-65/-40/-35
 
 #	Proyeccion Mercator (M)
@@ -76,17 +72,16 @@ clear
 
 #	Agregar escala de colores a partir de CPT (-C). Posición (x,y) +wlargo/ancho. Anotaciones (-Ba). Leyenda (+l). 
 	gmt colorbar -DjRM -I -Baf -By+l"km" -W0.001 -F+gwhite+p+i+s
-#	gmt colorbar -DjRM -I -Baf -By+l"km" -W0.001 -F+gwhite+p+i+s -GNaN/0
 	
 
 # ------------------------------------------------------------------------------
 #	Dibujar Norte (-Td). Ubicacion definida por coordenads geograficas (g) centrado en Lon0/Lat0, ancho (+w). Opcionalmente se pueden definir el nivel (+f), puntos cardinales (+l)
-  gmt basemap -Tdg-66.2/-35.5+w2c	          --FONT_TITLE=8p,4,Black
+    gmt basemap -Tdg-66.2/-35.5+w2c	          --FONT_TITLE=8p,4,Black
 
 # ------------------------------------------------------------------------------
 #	Dibujar Escala en el mapa centrado en -Lg Lon0/Lat0, calculado en el meridiano (+c) y de ancho (+w). Opcionalmente se puede elegir un estilo elegante(+f), agregar las unidades arriba de escala (+l) o con los valores (+u).
 #	-Fl: Agrega fondo a la escala. +gfill: color fondo. +p(pen): borde principal. +i(pen): borde interno. +r(radio): borde redondeado. +s: sombra   
-  gmt basemap -Lg-66/-39:40+c-51:45+w50k+f+l
+    gmt basemap -Lg-66/-39:40+c-51:45+w50k+f+l
    
 
 #	-----------------------------------------------------------------------------------------------------------
@@ -116,8 +111,7 @@ clear
 	END
 
 #	Graficar leyenda
-#	gmt legend tmp_leyenda -DJBC+o0/0.2c+w15c/0c    -F+p+i+r
-  gmt legend tmp_leyenda -DJBC+o0/1c+w15c/0c    -F+p+i+r
+    gmt legend tmp_leyenda -DJBC+o0/1c+w15c/0c    -F+p+i+r
 
 
 #	-----------------------------------------------------------------------------------------------------------
