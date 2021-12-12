@@ -71,6 +71,10 @@ clear
 	gmt coast -Df -I3/thinnest,$color
 	gmt coast -Df -I4/thinnest,$color,4_1:0p
 
+# ------------------------------------------------------------------------------
+#	Cursos y Cuerpos de Agua
+	gmt plot "lineas_de_aguas_continentales_perenne/lineas_de_aguas_continentales_perenne.shp" -Wfaint,blue  # Descargar archivo desde el IGN	
+
 # ------------------------------------------------------------------------------  
 
 #	Agregar escala de colores a partir de CPT (-C). Posición (x,y) +wlargo/ancho. Anotaciones (-Ba). Leyenda (+l). 
