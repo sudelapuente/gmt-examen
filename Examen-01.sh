@@ -62,14 +62,14 @@ clear
 #	3 = Additional rivers
 #	4 = Minor rivers
 #	gmt coast -Df -I0/thin,$color
-	color=dodgerblue2
-  gmt coast -Df -I0/2,$color,..-
-	gmt coast -Df -I1/1.5,$color
+#	color=dodgerblue2
+#  gmt coast -Df -I0/2,$color,..-
+#	gmt coast -Df -I1/1.5,$color
 #	gmt coast -Df -I2/1,$color,-
 #	gmt coast -Df -I3/thinnest,$color,-
-	gmt coast -Df -I2/1,$color
-	gmt coast -Df -I3/thinnest,$color
-	gmt coast -Df -I4/thinnest,$color,4_1:0p
+#	gmt coast -Df -I2/1,$color
+#	gmt coast -Df -I3/thinnest,$color
+#	gmt coast -Df -I4/thinnest,$color,4_1:0p
 
 # ------------------------------------------------------------------------------
 #	Cursos y Cuerpos de Agua
