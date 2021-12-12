@@ -150,7 +150,7 @@ clear
 #	S 0.25c - 0.5c - 1.0p,violet     0.75c Zonas de Fracturas
 #	S 0.25c - 0.5c - 0.80p,orange    0.75c Dorsales Extintas
 	G 0.075c
-	M -70 -57 50+u f
+	M -72 -55 50+u f
 	END
 
 #	Graficar leyenda
