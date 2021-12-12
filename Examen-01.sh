@@ -151,6 +151,8 @@ clear
 	G 0.075c
 	S 0.25c - 0.5c - 1.5p,black 0.75c L\355mite internacional
 	S 0.25c - 0.5c - 0.5p,black,-. 0.75c L\355mite provincial
+	N1
+	S 0.25c c 0.25c yellow   0.40p     0.5c localidades
 #	S 0.25c - 0.5c - 1.0p,violet     0.75c Zonas de Fracturas
 #	S 0.25c - 0.5c - 0.80p,orange    0.75c Dorsales Extintas
 	G 0.075c
